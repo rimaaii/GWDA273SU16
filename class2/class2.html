@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 	<title></title>
 
 <link rel="stylesheet" type="text/css" href="custom.css">
@@ -26,10 +27,52 @@ h1{
 	text-transform: none;
 	font-style: italic;
 	letter-spacing: -1px;
+	background-color: pink;
 }
 
+footer h1{
+	color: grey;
+}
 
+p{
+	font-family: sans-serif;
+}
 
+header, footer{
+	border: 1px solid black;
+	background-color: pink;
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(222, 62, 90);
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 12px;
+	/*font-weight: bold;*/
+}
+
+a:visited{
+	color: darkgrey;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:active{
+	text-shadow: 1px 1px darkgrey;
+}
+
+p:first-letter{
+	font-size: 24px;
+	font-style: italic;
+	font-family: Georgia;
+}
+
+p:first-line{
+	font-size:12px;
+}
 
 </style>
 
@@ -40,19 +83,37 @@ h1{
 	<h1 id="site-title">CSS Selectors</h1>
 </header>
 
-<article>
+<nav>
+	• <a href="#tag">Tag Selectors</a>
+	• <a href="#class">Class Selectors</a>	
+	• <a href="#id">ID Selectors</a>
+	• <a href="#descendent">Descendent Selectors</a>
+	• <a href="#group">Group Selectors</a> •
+</nav>
+
+<article id="tag">
 	<h1 class="headline">1. Tag Selectors</h1>
-	<p>Tag Selectors are also know as element selectors.</p>
+	<p>Tag Selectors are also know as element selectors. The element selector selects all elements with the specified element name. The element selector selects all elements with the specified element name.The element selector selects all elements with the specified element name.The element selector selects all elements with the specified element name.</p>
 </article>
 
-<article>
+<article id="class">
 	<h1 class="headline">2. Class Selectors</h1>
-	<p>Class selectors are defined with a period: .</p>
+	<p>Class selectors are defined with a period: . Class selectors are defined with a period: .Class selectors are defined with a period: .Class selectors are defined with a period: .</p>
 </article>
 
-<article>
-	<h1 class="headline">3. ID Selector</h1>
+<article id="id">
+	<h1 class="headline">3. ID Selectors</h1>
 	<p>ID selectors are defined with a hashtag: #.</p>
+</article>
+
+<article id="descendent">
+	<h1 class="headline">4. Descendent Selectors</h1>
+	<p>Descendent selectors select children of parent elements. Descendent selectors select children of parent elements. Descendent selectors select children of parent elements. Descendent selectors select children of parent elements.</p>
+</article>
+
+<article id="group">
+	<h1 class="headline">5. Group selectors</h1>
+	<p>Group selectors select mutliple elements. Group selectors select mutliple elements. Group selectors select mutliple elements. </p>
 </article>
 
 <footer>
